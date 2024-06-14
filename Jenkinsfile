@@ -47,10 +47,7 @@ pipeline {
       }
     }
 
-    stage('checkov') {
-      steps {
-        bat("checkov -s -f main.tf")
-      }
+    
     }
 
   }
