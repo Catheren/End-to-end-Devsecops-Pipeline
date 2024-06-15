@@ -32,6 +32,57 @@ _**Note:**EasyBuggy is a broken web application to understand the behavior of bu
 Purpose: Compile the code, run tests, and perform static code analysis using SonarQube.
 Details: This stage uses Maven to compile the project and run SonarQube analysis, ignoring test failures. The results are sent to the configured SonarQube server.
 
+**2. Build**
+
+Purpose: Build a Docker image for the application.
+Details: This stage logs into the [Docker registry](https://hub.docker.com/) and builds the Docker image using the application's Dockerfile.
+
+**3. Run Container Scan**
+
+Purpose: Scan the Docker image for vulnerabilities using Snyk.
+Details: This stage uses Snyk to perform a security scan of the Docker image and reports any vulnerabilities found.
+
+**4. Run Snyk SCA**
+
+Purpose: Scan the application dependencies for vulnerabilities using Snyk's Software Composition Analysis (SCA) tool.
+Details: This stage integrates Snyk with Maven to check for vulnerabilities in the project dependencies.
+
+
+**5. Run DAST Using ZAP**
+
+Purpose: Perform Dynamic Application Security Testing (DAST) using OWASP ZAP.
+Details: This stage runs OWASP ZAP in command-line mode to scan the web application for vulnerabilities and outputs the results to an HTML file.
+
+## Results
+**The build result on Jenkins**
+![image](https://github.com/Catheren/devsecops-jenkins-sast-sca-iac-cs-dast-e2e-repo-main/assets/94724571/4b557095-0f24-478f-8d5e-6a3187a51d5a)
+
+
+**SonarQube Output**
+![image](https://github.com/Catheren/devsecops-jenkins-sast-sca-iac-cs-dast-e2e-repo-main/assets/94724571/c2beb9df-651b-4a9a-9d6d-74767210b1c5)
+
+
+
+
+
+## Usage
+
+To use this pipeline, follow these steps:
+1. Set up Jenkins: Ensure Jenkins is installed and configured with the required plugins(Docker Pipeline) and tools .
+2. Configure Credentials: Add the necessary credentials in Jenkins for [SonarQube[](https://sonarcloud.io/login) (SONAR_TOKEN), [Docker](https://hub.docker.com/), and [Snyk](https://snyk.io/)(SNYK_TOKEN).
+3. Set up the Repository: Clone this repository and configure it as a Jenkins pipeline.
+4. Run the Pipeline: Trigger the pipeline from Jenkins to start the CI/CD process.
+
+## Credentials
+
+Ensure the following credentials are configured in Jenkins:
+
+- SONAR_TOKEN: Token for authenticating with SonarQube.
+- dockerlogin: Docker registry login credentials.
+- SNYK_TOKEN: Token for authenticating with Snyk.
+
+
+
 
 EasyBuggy Vulnerable Web App Modified 
 =
