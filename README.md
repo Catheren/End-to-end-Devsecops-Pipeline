@@ -67,6 +67,8 @@ Details: This stage runs OWASP ZAP in command-line mode to scan the web applicat
 **SonarQube Output**
 ![image](https://github.com/Catheren/devsecops-jenkins-sast-sca-iac-cs-dast-e2e-repo-main/assets/94724571/c2beb9df-651b-4a9a-9d6d-74767210b1c5)
 
+**JenkinsConsoleOutput can be seen at [JenkinsConsoleOutput](JenkinsConsoleOutput) file in this repository****
+
 
 
 
