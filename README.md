@@ -17,8 +17,7 @@ _**Note:**EasyBuggy is a broken web application to understand the behavior of bu
 7. [Run DAST Using ZAP](#Run-DAST-Using-ZAP)
 8. [Usage](#Usage)
 9. [Credentials](#Credentials)
-10. [Contributing](#Contributing)
-11. [License](#License)
+
 
 ## Prerequisites
 - Jenkins installed and configured
