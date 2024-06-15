@@ -1,5 +1,7 @@
 # DevSecOps CI/CD Pipeline
 
+![image](https://github.com/Catheren/devsecops-jenkins-sast-sca-iac-cs-dast-e2e-repo-main/assets/94724571/f376b88a-7c63-4f12-889a-4336afd2a4b6)
+
 
 This repository contains a Jenkins pipeline configuration for a DevSecOps CI/CD process. The pipeline includes stages for compiling code, running static and dynamic security analysis, building Docker images, and performing container security scans.
 
@@ -69,7 +71,7 @@ Details: This stage runs OWASP ZAP in command-line mode to scan the web applicat
 
 **3. ZAP Output can be found [here](ZAPOutput)**
 
-**4. Jenkins Console Output can be found [here.](JenkinsConsoleOutput)****
+**4. Jenkins Console Output can be found [here.](JenkinsConsoleOutput)**
 
 
 
