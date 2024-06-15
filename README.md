@@ -68,7 +68,7 @@ _**Note:**EasyBuggy is a broken web application to understand the behavior of bu
 **2. SonarQube Output**
 ![image](https://github.com/Catheren/devsecops-jenkins-sast-sca-iac-cs-dast-e2e-repo-main/assets/94724571/c2beb9df-651b-4a9a-9d6d-74767210b1c5)
 
-**3. ZAP Output can be found [here](ZAPOutput)**
+**3. ZAP Output can be found [here](ZAPOutput.html)**
 ![image](https://github.com/Catheren/End-to-end-Devsecops-Pipeline/assets/94724571/3414e32c-ca2f-4c64-a99d-102726fdc662)
 
 
