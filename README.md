@@ -60,14 +60,17 @@ Purpose: Perform Dynamic Application Security Testing (DAST) using OWASP ZAP.
 Details: This stage runs OWASP ZAP in command-line mode to scan the web application for vulnerabilities and outputs the results to an HTML file. I setup an ec2 instance in AWS to run the application so that ZAP can test it.
 
 ## Results
-**The build result on Jenkins**
+**1. The build result on Jenkins**
 ![image](https://github.com/Catheren/devsecops-jenkins-sast-sca-iac-cs-dast-e2e-repo-main/assets/94724571/4b557095-0f24-478f-8d5e-6a3187a51d5a)
 
 
-**SonarQube Output**
+**2. SonarQube Output**
 ![image](https://github.com/Catheren/devsecops-jenkins-sast-sca-iac-cs-dast-e2e-repo-main/assets/94724571/c2beb9df-651b-4a9a-9d6d-74767210b1c5)
 
-**JenkinsConsoleOutput can be seen at [JenkinsConsoleOutput](JenkinsConsoleOutput) file in this repository****
+**3. ZAP Output can be found [here](ZAPOutput)**
+
+**4. Jenkins Console Output can be found [here.](JenkinsConsoleOutput)****
+
 
 
 
