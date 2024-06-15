@@ -21,10 +21,11 @@ _**Note:**EasyBuggy is a broken web application to understand the behavior of bu
 ## Prerequisites
 - Jenkins installed and configured
 - Maven 3.8.7
-- Docker
-- SonarQube server
-- Snyk CLI
+- Docker, Docker Hub login
+- SonarQube server, SonarCloud login
+- Snyk CLI, Snyk login for Authentication
 - OWASP ZAP
+- AWS EC2 Instance to set up the EasBuggy application
 
 ## Pipeline Stages
 **1. Compile and Run Sonar Analysis**
