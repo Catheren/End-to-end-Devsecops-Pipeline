@@ -1,8 +1,11 @@
+# DevSecOps CI/CD Pipeline
+
+
 This repository contains a Jenkins pipeline configuration for a DevSecOps CI/CD process. The pipeline includes stages for compiling code, running static and dynamic security analysis, building Docker images, and performing container security scans.
 
 _**Note:**EasyBuggy is a broken web application to understand the behavior of bugs and vulnerabilities, for example, [memory leak, deadlock, JVM crash, SQL injection and so on](https://github.com/k-tamura/easybuggy#clock4-easybuggy-can-reproduce)._
 
-##Table of Contents
+## Table of Contents
 1. [Prerequisites](#Prerequisites)
 2. [Pipeline Stages](#Pipeline-Stages)
 3. [Compile and Run Sonar Analysis](#Compile-and-Run-Sonar-Analysis)
@@ -15,13 +18,20 @@ _**Note:**EasyBuggy is a broken web application to understand the behavior of bu
 10. [Contributing](#Contributing)
 11. [License](#License)
 
- I have used the following tools in this project to implement the pipeline:
-- SonarQube for SAST
-- Snyk for Container Scan
-- Snyk's SCA tool integrated with Maven for Software Composition Analysis
-- DAST using ZAP
+## Prerequisites
+- Jenkins installed and configured
+- Maven 3.8.7
+- Docker
+- SonarQube server
+- Snyk CLI
+- OWASP ZAP
 
-Other tools used in this example are Jenkins (Local host) and Maven for orchestration and bui
+## Pipeline Stages
+**1. Compile and Run Sonar Analysis**
+
+Purpose: Compile the code, run tests, and perform static code analysis using SonarQube.
+Details: This stage uses Maven to compile the project and run SonarQube analysis, ignoring test failures. The results are sent to the configured SonarQube server.
+
 
 EasyBuggy Vulnerable Web App Modified 
 =
