@@ -32,7 +32,7 @@ _**Note:**EasyBuggy is a broken web application to understand the behavior of bu
 **1. Compile and Run Sonar Analysis**
 
 **Purpose**: Compile the code, run tests, and perform static code analysis using SonarQube.
-
+    
 **Details**: This stage uses Maven to compile the project and run SonarQube analysis, ignoring test failures. The results are sent to the configured SonarQube server.
 
 **2. Build**
