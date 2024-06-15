@@ -30,28 +30,33 @@ _**Note:**EasyBuggy is a broken web application to understand the behavior of bu
 **1. Compile and Run Sonar Analysis**
 
 Purpose: Compile the code, run tests, and perform static code analysis using SonarQube.
+
 Details: This stage uses Maven to compile the project and run SonarQube analysis, ignoring test failures. The results are sent to the configured SonarQube server.
 
 **2. Build**
 
 Purpose: Build a Docker image for the application.
+
 Details: This stage logs into the [Docker registry](https://hub.docker.com/) and builds the Docker image using the application's Dockerfile.
 
 **3. Run Container Scan**
 
 Purpose: Scan the Docker image for vulnerabilities using Snyk.
+
 Details: This stage uses Snyk to perform a security scan of the Docker image and reports any vulnerabilities found.
 
 **4. Run Snyk SCA**
 
 Purpose: Scan the application dependencies for vulnerabilities using Snyk's Software Composition Analysis (SCA) tool.
+
 Details: This stage integrates Snyk with Maven to check for vulnerabilities in the project dependencies.
 
 
 **5. Run DAST Using ZAP**
 
 Purpose: Perform Dynamic Application Security Testing (DAST) using OWASP ZAP.
-Details: This stage runs OWASP ZAP in command-line mode to scan the web application for vulnerabilities and outputs the results to an HTML file.
+
+Details: This stage runs OWASP ZAP in command-line mode to scan the web application for vulnerabilities and outputs the results to an HTML file. I setup an ec2 instance in AWS to run the application so that ZAP can test it.
 
 ## Results
 **The build result on Jenkins**
