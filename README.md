@@ -1,5 +1,5 @@
 # DevSecOps CI/CD Pipeline
-..This project shows an end-to-end CI/CD pipeline where Jenkins is used as an orchestrator to perform SAST, DAST, Container Scanning, and Software Composition Analysis (SCA).
+This project shows an end-to-end CI/CD pipeline where Jenkins is used as an orchestrator to perform SAST, DAST, Container Scanning, and Software Composition Analysis (SCA).
 
 ![image](https://github.com/Catheren/devsecops-jenkins-sast-sca-iac-cs-dast-e2e-repo-main/assets/94724571/f376b88a-7c63-4f12-889a-4336afd2a4b6)
 
