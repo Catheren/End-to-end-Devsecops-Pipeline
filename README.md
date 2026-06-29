@@ -27,12 +27,6 @@ The pipeline was tested against **EasyBuggy** — a deliberately vulnerable Java
 
 ---
 
-## Pipeline architecture
-
-![Pipeline architecture](docs/pipeline_overview.png)
-
----
-
 ## Pipeline stages
 
 ```
